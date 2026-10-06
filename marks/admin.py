@@ -1,6 +1,11 @@
 from django.contrib import admin
 
-from marks.models import Discipline, Profile
+from marks.models import Discipline, Profile, Group
+
+
+@admin.register(Group)
+class GroupAdmin(admin.ModelAdmin):
+    pass
 
 
 # Register your models here.
